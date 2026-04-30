@@ -1,5 +1,9 @@
-I am a PhD student at the School of Science, University of Example, advised by [Prof. Advisor One](https://example.com) and [Dr. Advisor Two](https://example.com).
+I am Yuxiang Lin (林育祥), a PhD student at the National Institute for Data Science in Health and Medicine, Xiamen University, majoring in computational biology and bioinformatics. I am supervised by [Rongshan Yu](https://scholar.google.com/citations?hl=en&user=Uh1EpKQAAAAJ).
 
-Prior to this, I obtained a BSc degree with First Class Honours in Natural Science from the University of Example.
+I received my B.S. in Biology from the State Key Laboratory of Cellular Stress Biology, School of Life Sciences, Xiamen University (2018-2022).
 
-My current research focuses on investigating the mathematical principles of natural philosophy.
+My research is organized around three connected interests:
+
+- **Computational biology:** developing computational methods for clinically relevant tumor microenvironment niche discovery, single-cell recurrence risk modeling, and spatial transcriptomics prediction, represented by TiRank, scRank, ST-Align, and HyperST.
+- **Biomedical agents:** exploring agentic AI systems for biomedical research, including literature-aware reasoning, multimodal evidence integration, tool-augmented data analysis, and workflow automation for diagnosis, prognosis, and mechanism discovery.
+- **Multi-omics for medicine:** integrating single-cell, spatial, transcriptomic, proteomic, and imaging data to support disease mechanism discovery and translational biomarker analysis.

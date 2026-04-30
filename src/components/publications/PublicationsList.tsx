@@ -15,6 +15,7 @@ import { Publication } from '@/types/publication';
 import { PublicationPageConfig } from '@/types/page';
 import { cn } from '@/lib/utils';
 import { useMessages } from '@/lib/i18n/useMessages';
+import PublicationLinks from './PublicationLinks';
 
 interface PublicationsListProps {
     config: PublicationPageConfig;
@@ -190,29 +191,32 @@ export default function PublicationsList({ config, publications, embedded = fals
                         {messages.publications.noResults}
                     </div>
                 ) : (
-                    filteredPublications.map((pub, index) => (
-                        <motion.div
-                            key={pub.id}
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.4, delay: 0.1 * index }}
-                            className="bg-white dark:bg-neutral-900 p-6 rounded-xl shadow-sm border border-neutral-200 dark:border-neutral-800 hover:shadow-md transition-all duration-200"
-                        >
-                            <div className="flex flex-col md:flex-row gap-6">
-                                {pub.preview && (
-                                    <div className="w-full md:w-48 flex-shrink-0">
-                                        <div className="aspect-video md:aspect-[4/3] relative rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-800">
-                                            <Image
-                                                src={`/papers/${pub.preview}`}
-                                                alt={pub.title}
-                                                fill
-                                                className="object-cover"
-                                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                            />
+                    filteredPublications.map((pub, index) => {
+                        const listPreview = pub.listPreview || pub.preview;
+
+                        return (
+                            <motion.div
+                                key={pub.id}
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.4, delay: 0.1 * index }}
+                                className="bg-white dark:bg-neutral-900 p-6 rounded-xl shadow-sm border border-neutral-200 dark:border-neutral-800 hover:shadow-md transition-all duration-200"
+                            >
+                                <div className="flex flex-col md:flex-row gap-6">
+                                    {listPreview && (
+                                        <div className="w-full md:w-56 flex-shrink-0">
+                                            <div className="aspect-video md:aspect-[4/3] relative rounded-lg overflow-hidden bg-white ring-1 ring-neutral-200 dark:bg-neutral-950 dark:ring-neutral-800">
+                                                <Image
+                                                    src={`/papers/${listPreview}`}
+                                                    alt={pub.title}
+                                                    fill
+                                                    className="object-contain p-2"
+                                                    sizes="(max-width: 768px) 100vw, 224px"
+                                                />
+                                            </div>
                                         </div>
-                                    </div>
-                                )}
-                                <div className="flex-grow">
+                                    )}
+                                    <div className="flex-grow">
                                     <h3 className={`${embedded ? "text-lg" : "text-xl"} font-semibold text-primary mb-2 leading-tight`}>
                                         {pub.title}
                                     </h3>
@@ -240,26 +244,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                     )}
 
                                     <div className="flex flex-wrap gap-2 mt-auto">
-                                        {pub.doi && (
-                                            <a
-                                                href={`https://doi.org/${pub.doi}`}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
-                                            >
-                                                DOI
-                                            </a>
-                                        )}
-                                        {pub.code && (
-                                            <a
-                                                href={pub.code}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
-                                            >
-                                                {messages.publications.code}
-                                            </a>
-                                        )}
+                                        <PublicationLinks publication={pub} includeDoi compact inline />
                                         {pub.abstract && (
                                             <button
                                                 onClick={() => setExpandedAbstractId(expandedAbstractId === pub.id ? null : pub.id)}
@@ -332,10 +317,11 @@ export default function PublicationsList({ config, publications, embedded = fals
                                             </motion.div>
                                         ) : null}
                                     </AnimatePresence>
+                                    </div>
                                 </div>
-                            </div>
-                        </motion.div>
-                    ))
+                            </motion.div>
+                        );
+                    })
                 )}
             </div>
         </motion.div>

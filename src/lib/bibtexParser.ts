@@ -59,8 +59,10 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
     // Parse selected field (convert string to boolean)
     const selected = tags.selected === 'true' || tags.selected === 'yes';
 
-    // Parse preview field (remove braces if present)
+    // Parse preview fields (remove braces if present)
     const preview = tags.preview?.replace(/[{}]/g, '');
+    const listPreview = (tags.list_preview || tags.figure_preview)?.replace(/[{}]/g, '');
+    const homePreview = (tags.home_preview || tags.venue_preview)?.replace(/[{}]/g, '');
 
     // Create publication object
     const publication: Publication = {
@@ -82,15 +84,39 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
       issue: tags.number,
       pages: tags.pages,
       doi: tags.doi,
-      url: tags.url,
-      code: tags.code,
+      url: cleanBibTeXString(tags.url),
+      code: cleanBibTeXString(tags.code),
+      demo: cleanBibTeXString(tags.demo || tags.web_demo),
+      docs: cleanBibTeXString(tags.docs || tags.documentation),
+      paper: cleanBibTeXString(tags.paper || tags.paper_url),
+      website: cleanBibTeXString(tags.website || tags.project_url),
       abstract: cleanBibTeXString(tags.abstract),
       description: cleanBibTeXString(tags.description || tags.note),
       selected,
       preview,
+      listPreview,
+      homePreview,
 
       // Store original BibTeX (excluding custom fields)
-      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code']),
+      bibtex: reconstructBibTeX(entry, [
+        'selected',
+        'preview',
+        'list_preview',
+        'figure_preview',
+        'home_preview',
+        'venue_preview',
+        'description',
+        'keywords',
+        'code',
+        'demo',
+        'web_demo',
+        'docs',
+        'documentation',
+        'paper',
+        'paper_url',
+        'website',
+        'project_url',
+      ]),
     };
 
     // Clean up undefined fields

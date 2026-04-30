@@ -1,26 +1,29 @@
-## 教育背景
+## 研究概况
 
-**某某大学**，自然科学博士，*2025 - 至今*
-- 研究方向：自然哲学的数学原理
-- 导师：导师甲教授、导师乙博士
+**Yuxiang Lin**\
+厦门大学
 
-**某某大学**，自然科学学士，*2021 - 2025*
-- 一等荣誉毕业
+- 研究兴趣：单细胞与空间组学、肿瘤微环境、生物医学智能体、肿瘤生物标志物发现、蛋白质组学、多组学数据挖掘。
+- 邮箱：[linyuxiang@stu.xmu.edu.cn](mailto:linyuxiang@stu.xmu.edu.cn)
+- 学术主页：[Google Scholar](https://scholar.google.com/citations?user=TgJ6W0YAAAAJ&hl=en)、[ORCID](https://orcid.org/0000-0001-8854-2995)。
+- Google Scholar 指标：截至 2026 年 4 月 30 日，引用 105 次，h-index 为 6，i10-index 为 5。
 
-## 经历
+## 代表性论文
 
-**示例岗位**
-公司/机构
-*2023 - 2024*
-- 负责关键工作并完成目标。
-- 运用专业技能解决实际问题。
+- **ST-Align: Multi-Scale Image-Gene Foundation Modeling for Spatial Transcriptomics via Spot-Niche Alignment.** ICLR 2026 Workshop FM4Science, 2026.
+- **TiRank prioritizes phenotypic niches in tumor microenvironment for clinical biomarker discovery.** Genome Medicine, 2026.
+- **BioMTAN: A Biological Knowledge-guided Multi-task Attention Network for Co-enhanced Cancer Diagnosis and Prognosis.** IEEE Journal of Biomedical and Health Informatics, 2025.
+- **SurvMamba: State Space Model with Multi-Grained Multi-Modal Interaction for Survival Prediction.** IEEE BIBM, 2025.
+- **Tracing unknown tumor origins with a biological-pathway-based transformer model.** Cell Reports Methods, 2024.
+- **PhosMap: An ensemble bioinformatic platform to empower interactive analysis of quantitative phosphoproteomics.** Computers in Biology and Medicine, 2024.
+- **SIMarker: Cellular similarity detection and its application to diagnosis and prognosis of liver cancer.** Computers in Biology and Medicine, 2024.
+- **Prioritizing prognostic-associated subpopulations and individualized recurrence risk signatures from single-cell transcriptomes of colorectal cancer.** Briefings in Bioinformatics, 2023.
 
-## 技能
+## 方法与主题
 
-- **编程：** Python, C++, MATLAB, LaTeX
-- **数据分析：** Pandas, NumPy, SciPy
-- **语言：** 中文（母语）, 英文（流利）
-
-## 奖项与荣誉
-
-- **示例竞赛一等奖** - 某某评审委员会 (*2024*)
+- 计算生物学与生物信息学
+- 生物医学智能体与机器学习
+- 单细胞与空间转录组学
+- 肿瘤微环境分析
+- 蛋白质组学与磷酸化蛋白质组学
+- 肿瘤诊断、预后与生物标志物发现

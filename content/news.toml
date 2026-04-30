@@ -1,7 +1,31 @@
 [[news]]
-date = "2025-11"
-content = "Our work has been accepted by a prestigious journal 🎉"
+date = "2026-03"
+content = "ST-Align was published as a conference paper at ICLR 2026."
 
 [[news]]
-date = "2025-09"
-content = "Starting my PhD at the University of Example"
+date = "2026-02"
+content = "TiRank was published in Genome Medicine."
+
+[[news]]
+date = "2025-12"
+content = "SurvMamba appeared at IEEE BIBM 2025."
+
+[[news]]
+date = "2025"
+content = "BioMTAN was published in IEEE Journal of Biomedical and Health Informatics."
+
+[[news]]
+date = "2024-10"
+content = "Work on Ccl2-induced regulatory T cells was published in Advanced Science."
+
+[[news]]
+date = "2024-10"
+content = "A preprint on accurate cell abundance quantification with multi-positive and unlabeled self-learning was released."
+
+[[news]]
+date = "2024-06"
+content = "Our biological-pathway-based transformer model for tracing unknown tumor origins was published in Cell Reports Methods."
+
+[[news]]
+date = "2024-05"
+content = "PhosMap was published in Computers in Biology and Medicine."

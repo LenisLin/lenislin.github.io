@@ -1,7 +1,31 @@
 [[news]]
-date = "2025-11"
-content = "我们的工作被顶级期刊接收了 🎉"
+date = "2026-03"
+content = "ST-Align 作为 ICLR 2026 conference paper 发布。"
 
 [[news]]
-date = "2025-09"
-content = "在某某大学开始博士学习"
+date = "2026-02"
+content = "TiRank 发表在 Genome Medicine。"
+
+[[news]]
+date = "2025-12"
+content = "SurvMamba 发表于 IEEE BIBM 2025。"
+
+[[news]]
+date = "2025"
+content = "BioMTAN 发表在 IEEE Journal of Biomedical and Health Informatics。"
+
+[[news]]
+date = "2024-10"
+content = "Ccl2 诱导调节性 T 细胞相关工作发表在 Advanced Science。"
+
+[[news]]
+date = "2024-10"
+content = "基于多正例与未标注自学习的细胞丰度量化预印本发布。"
+
+[[news]]
+date = "2024-06"
+content = "用于未知肿瘤来源追踪的生物通路驱动 Transformer 模型发表在 Cell Reports Methods。"
+
+[[news]]
+date = "2024-05"
+content = "PhosMap 发表在 Computers in Biology and Medicine。"

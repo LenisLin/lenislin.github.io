@@ -3,9 +3,9 @@ title = "关于我"
 
 [profile]
 research_interests = [
-  "计算物理",
-  "数学原理",
-  "定理证明"
+  "Computational Biology",
+  "生物医学智能体",
+  "Multi-omics for Medicine"
 ]
 
 [[sections]]
@@ -19,7 +19,7 @@ id = "featured_publications"
 type = "publications"
 title = "精选论文"
 filter = "selected"
-limit = 5
+limit = 4
 
 [[sections]]
 id = "news"

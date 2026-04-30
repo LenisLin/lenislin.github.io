@@ -1,33 +1,30 @@
 [site]
-title = "Jiale Liu"
-description = "PhD student at the University of Example."
+title = "Yuxiang Lin"
+description = "Personal academic homepage of Yuxiang Lin."
 favicon = "/favicon.svg"
-last_updated = "November 18, 2025"
+last_updated = "April 30, 2026"
 
 [author]
-name = "Jiale Liu"
-title = "PhD Student"
-institution = "University of Example"
+name = "Yuxiang Lin"
+title = "Computational Biology Researcher"
+institution = "Xiamen University"
 avatar = "/bio.jpg"
 
 [social]
 # Contact information (leave blank or delete to hide)
 
-email = "john.doe@example.com"
-location = "City, Country"
-location_url = "https://maps.google.com"
-location_details = [
-  "Room 123, Science Building,",
-  "University Avenue, City, Country"
-]
-google_scholar = "https://scholar.google.com"
-orcid = "https://orcid.org"
-github = "https://github.com"
-linkedin = "https://linkedin.com"
+email = "linyuxiang@stu.xmu.edu.cn"
+location = ""
+location_url = ""
+location_details = []
+google_scholar = "https://scholar.google.com/citations?user=TgJ6W0YAAAAJ&hl=en"
+orcid = "https://orcid.org/0000-0001-8854-2995"
+github = "https://github.com/lenislin"
+linkedin = ""
 
 [features]
 # Show a like button on the about page
-enable_likes = true
+enable_likes = false
 
 # Display all subpages on a single page
 enable_one_page_mode = false
@@ -59,24 +56,6 @@ title = "Publications"
 type = "page"
 target = "publications"
 href = "/publications"
-
-[[navigation]]
-title = "Teaching"
-type = "page"
-target = "teaching"
-href = "/teaching"
-
-[[navigation]]
-title = "Awards"
-type = "page"
-target = "awards"
-href = "/awards"
-
-[[navigation]]
-title = "Services"
-type = "page"
-target = "services"
-href = "/services"
 
 [[navigation]]
 title = "CV"
