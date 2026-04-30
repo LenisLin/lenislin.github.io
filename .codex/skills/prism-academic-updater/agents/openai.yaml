@@ -1,0 +1,7 @@
+interface:
+  display_name: "PRISM Academic Updater"
+  short_description: "Refresh PRISM academic homepage content"
+  default_prompt: "Use $prism-academic-updater to update this PRISM academic homepage from a Google Scholar or ORCID profile while preserving the current publication cards, thumbnails, links, checks, and deployment workflow."
+
+policy:
+  allow_implicit_invocation: true
