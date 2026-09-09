@@ -1,6 +1,18 @@
 [[news]]
+date = "2026-09"
+content = "SlideChat 发表于 Nature Cancer，是面向多癌种全切片计算病理的多模态生成式 AI 助手。"
+
+[[news]]
+date = "2026-06"
+content = "Chem2Gen-Bench 作为 arXiv 预印本发布，用于扰动响应空间中的 chemical-to-genetic translation 基准评估。"
+
+[[news]]
+date = "2026"
+content = "HyperST 被 CVPR 2026 接收为 Spotlight 论文。"
+
+[[news]]
 date = "2026-03"
-content = "ST-Align 作为 ICLR 2026 conference paper 发布。"
+content = "ST-Align 发表于 ICLR 2026 Workshop on Foundation Models for Science。"
 
 [[news]]
 date = "2026-02"

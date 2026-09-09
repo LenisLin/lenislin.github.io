@@ -1,6 +1,18 @@
 [[news]]
+date = "2026-09"
+content = "SlideChat was published in Nature Cancer as a multimodal generative AI assistant for whole-slide computational pathology across cancer types."
+
+[[news]]
+date = "2026-06"
+content = "Chem2Gen-Bench was released as an arXiv preprint for benchmarking chemical-to-genetic translation in perturbation response space."
+
+[[news]]
+date = "2026"
+content = "HyperST was accepted as a CVPR 2026 Spotlight paper."
+
+[[news]]
 date = "2026-03"
-content = "ST-Align was published as a conference paper at ICLR 2026."
+content = "ST-Align appeared at the ICLR 2026 Workshop on Foundation Models for Science."
 
 [[news]]
 date = "2026-02"

@@ -4,6 +4,6 @@ I received my B.S. in Biology from the State Key Laboratory of Cellular Stress B
 
 My research is organized around three connected interests:
 
-- **Computational biology:** developing computational methods for clinically relevant tumor microenvironment niche discovery, single-cell recurrence risk modeling, and spatial transcriptomics prediction, represented by TiRank, scRank, ST-Align, and HyperST.
+- **Computational biology:** developing computational methods for clinically relevant tumor microenvironment niche discovery, single-cell recurrence risk modeling, spatial transcriptomics prediction, and perturbation-response benchmarking, represented by TiRank, scRank, ST-Align, HyperST, and Chem2Gen-Bench.
 - **Biomedical agents:** exploring agentic AI systems for biomedical research, including literature-aware reasoning, multimodal evidence integration, tool-augmented data analysis, and workflow automation for diagnosis, prognosis, and mechanism discovery.
 - **Multi-omics for medicine:** integrating single-cell, spatial, transcriptomic, proteomic, and imaging data to support disease mechanism discovery and translational biomarker analysis.

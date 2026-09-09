@@ -4,6 +4,6 @@
 
 我的研究兴趣主要围绕三个相互关联的方向展开：
 
-- **Computational biology:** 开发面向临床问题的计算方法，用于肿瘤微环境生态位发现、单细胞复发风险建模和空间转录组预测，代表性工作包括 TiRank、scRank、ST-Align 和 HyperST。
+- **Computational biology:** 开发面向临床问题的计算方法，用于肿瘤微环境生态位发现、单细胞复发风险建模、空间转录组预测和扰动响应基准评估，代表性工作包括 TiRank、scRank、ST-Align、HyperST 和 Chem2Gen-Bench。
 - **Biomedical agents:** 探索智能体在生物医学研究中的应用，包括文献驱动推理、多模态证据整合、工具调用式数据分析，以及面向诊断、预后和机制发现的自动化研究流程。
 - **Multi-omics for medicine:** 整合单细胞、空间组学、转录组、蛋白组和病理图像数据，服务于疾病机制解析和转化医学标志物发现。
