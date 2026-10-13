@@ -14,7 +14,7 @@ When the user asks to update papers from Google Scholar/ORCID or add new publica
 1. Read `references/prism-project-map.md` for exact file locations and conventions.
 2. Browse/verify publication metadata from primary sources whenever possible.
 3. Update content in `content/` and `content_zh/`, preserving the existing card layout and selected-publication style.
-4. Add paper thumbnails to `public/papers/` only when the image source is available or can be generated/extracted reliably.
+4. Give every paper a thumbnail extracted from the complete first page of its PDF, following the Thumbnail Rules below.
 5. Run verification before claiming completion.
 6. Deploy only when the user asks to publish.
 
@@ -29,8 +29,8 @@ When updating `content/publications.bib`:
 - Keep entries sorted by year and month descending.
 - Use `selected = {true}` only for representative works the user wants featured.
 - Use these custom fields when available:
-  - `list_preview = {paper-figure1.png}`
-  - `home_preview = {paper-home.png}`
+  - `list_preview = {paper-first-page.png}` for every paper.
+  - `home_preview = {paper-first-page.png}` using the same image for selected papers.
   - `code = {https://github.com/...}`
   - `demo = {https://...}`
   - `docs = {https://...}`
@@ -48,17 +48,25 @@ Maintain the current positioning:
 
 ## Thumbnail Rules
 
-Use the current visual pattern:
+Every paper in both **Selected Publications** and **Publications** must show the complete first page of its actual PDF.
 
-- Full publication page uses `list_preview` images as contained figure/front-page thumbnails.
-- Home selected publications use `home_preview` images with a tighter portrait-style crop.
-- Store images under `public/papers/`.
-- Prefer screenshots that reveal the paper homepage or figure 1 and publication venue.
-- Do not fabricate thumbnails or repository links. If a source cannot be verified, leave the field blank and mention the gap.
+- Verify that the PDF title and DOI or other paper identifier match the publication. Prefer the final published PDF when available; otherwise use a verified preprint PDF.
+- Render page 1 as a whole page, including its margins, title, authors, publication header, and footer when present. Do not use Figure 1, an extracted figure, a publisher webpage screenshot, or a cropped page.
+- Store the image as `public/papers/<paper-slug>-first-page.png`. Set `list_preview` for every paper and set `home_preview` to the identical filename for selected papers. Reuse an existing image only after verifying that it is the complete PDF first page.
+- Both components must contain the whole image (`object-contain`), preserving its aspect ratio without cropping.
+- If the PDF cannot be obtained, report the specific missing paper and request a local PDF path. Keep the update incomplete until its first-page image is available; do not substitute another image or silently leave a paper without a thumbnail.
+
+For example, render a supplied PDF with Poppler:
+
+```bash
+pdftoppm -f 1 -singlefile -scale-to 1400 -png /path/to/paper.pdf public/papers/paper-first-page
+```
+
+Do not fabricate repository links; add them only when verified.
 
 ## Verification
 
-Before reporting completion, run:
+Before reporting completion, verify that every publication's `list_preview` resolves to an existing first-page image, selected papers use the same file in `home_preview`, and the rendered images display the complete page in both sections. Then run:
 
 ```bash
 npm run build

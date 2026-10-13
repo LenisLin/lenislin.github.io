@@ -62,8 +62,10 @@ Avatar:
 Paper thumbnails:
 
 - Directory: `public/papers/`
-- Current naming pattern: `tirank-figure1.png`, `tirank-home.png`, `scrank-figure1.png`, etc.
-- Use `list_preview` for full publication page thumbnails and `home_preview` for homepage selected-paper cards.
+- Naming pattern: `<paper-slug>-first-page.png`, such as `tirank-first-page.png`, `scrank-first-page.png`, and `slidechat-first-page.png`.
+- Every paper must use its complete PDF first page, preserving margins and page content. Replace existing Figure 1 images and cropped previews.
+- Set `list_preview` for every paper and use the identical image filename in `home_preview` for selected papers. Both components display the full page with `object-contain`.
+- If a PDF is unavailable, request its local path and report the missing paper; do not substitute a figure or webpage screenshot.
 
 ## Current Representative Works
 
