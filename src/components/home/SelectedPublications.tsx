@@ -51,9 +51,9 @@ export default function SelectedPublications({ publications, title, enableOnePag
                                         <div className="relative aspect-[3/4] overflow-hidden rounded-md bg-white ring-1 ring-neutral-200 dark:bg-neutral-950 dark:ring-neutral-700">
                                             <Image
                                                 src={`/papers/${homePreview}`}
-                                                alt={pub.title}
+                                                alt={`First page of ${pub.title}`}
                                                 fill
-                                                className="object-cover object-top"
+                                                className="object-contain"
                                                 sizes="144px"
                                             />
                                         </div>
