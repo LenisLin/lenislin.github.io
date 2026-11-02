@@ -2,6 +2,7 @@
 title: Application of individualized differential expression analysis in human cancer proteome
 date: '2022-04-01'
 year: 2022
+source_order: 13
 kind: journal
 selected: false
 pub: Briefings in Bioinformatics

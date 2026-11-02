@@ -8,6 +8,8 @@
 - `/zh/`、`/zh/publications`、`/zh/cv`：中文。
 - 根路径固定显示英文，语言由 URL 决定；导航提供手动切换。
 - 深浅主题可通过导航按钮切换；论文页提供搜索、年份/类型筛选、逐篇 BibTeX 和文献列表下载。
+- 默认采用深炭黑背景、暖白正文与金色点缀；主题按钮可切换为暖白浅色版本。
+- 论文按年月倒序排列，同月按 `source_order` 保持原 BibTeX 中的先后；首页、论文页和 CV 共用 `_includes/personal/publications.html`。
 
 ## 本机运行
 
@@ -59,5 +61,6 @@ GitHub Pages 的发布来源使用 GitHub Actions。`Gemfile.lock` 随源码提�
 - 论文元数据与已有资源链接以 PRISM 为迁移依据；本次不进行外部文献核验。CV 的 TiRank 署名角色在不同材料中存在差异，本次保留 PRISM 的作者顺序与姓名高亮，待确认后再添加角色标记。
 - 首页保留原有 5 篇精选标记；历史新闻折叠展示，日期只按原材料的精度显示。
 - 新横幅为本地 SVG，独立绘制单细胞、组织上下文与计算网络元素。
+- 机构标识使用官网资源：[厦门大学学校标识](https://www.xmu.edu.cn/sdgl/xxbs.htm)、[达摩院](https://damo.alibaba.com/)。本地文件位于 `assets/images/institutions/`，条目的 `logo` 与 `website` 在 `_data/profile.yml` 维护。
 
 参考设计：<https://cying18.github.io/>。框架许可保留于 `LICENSE`，PRISM 资源的许可保留于 `PRISM-LICENSE`。

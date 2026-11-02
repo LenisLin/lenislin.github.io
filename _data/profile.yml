@@ -68,7 +68,9 @@ bio:
 
     '
 education:
-- names:
+- logo: /assets/images/institutions/xmu.jpg
+  website: https://www.xmu.edu.cn/
+  names:
     en: Xiamen University
     zh: 厦门大学
   positions:
@@ -81,7 +83,9 @@ education:
     en: 2022 – 2027 (expected)
     zh: 2022 – 2027（预计）
   advisor: Rongshan Yu
-- names:
+- logo: /assets/images/institutions/xmu.jpg
+  website: https://www.xmu.edu.cn/
+  names:
     en: Xiamen University
     zh: 厦门大学
   positions:
@@ -94,7 +98,9 @@ education:
     en: Sep. 2018 – Jun. 2022
     zh: 2018.09 – 2022.06
 experience:
-- names:
+- logo: /assets/images/institutions/damo.png
+  website: https://damo.alibaba.com/
+  names:
     en: Alibaba DAMO Academy
     zh: 阿里巴巴达摩院
   positions:

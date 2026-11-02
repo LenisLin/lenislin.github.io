@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ page.lang | default: 'en' }}">
+<html lang="{{ page.lang | default: 'en' }}" class="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,7 +26,7 @@
       </div>
       <div class="nav-controls">
         <a class="language-link" href="{{ page.alternate | relative_url }}" lang="{% if lang == 'en' %}zh{% else %}en{% endif %}">{{ ui.switch_language }}</a>
-        <button class="theme-toggle" type="button" aria-label="{{ ui.toggle_theme }}" aria-pressed="false" hidden>◐</button>
+        <button class="theme-toggle" type="button" aria-label="{{ ui.toggle_theme }}" aria-pressed="true" hidden>◐</button>
       </div>
     </nav>
   </header>

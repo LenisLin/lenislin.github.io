@@ -2,6 +2,7 @@
 title: TiRank prioritizes phenotypic niches in tumor microenvironment for clinical biomarker discovery
 date: '2026-02-01'
 year: 2026
+source_order: 5
 kind: journal
 selected: true
 pub: Genome Medicine
@@ -26,7 +27,7 @@ authors:
 - Mengsha Tong
 abstract: A computational framework for prioritizing clinically relevant phenotypic niches in the tumor
   microenvironment.
-cover: /assets/images/papers/tirank-home.png
+cover: /assets/images/papers/tirank-first-page.png
 links:
   Paper: https://doi.org/10.1186/s13073-026-01604-2
   DOI: https://doi.org/10.1186/s13073-026-01604-2

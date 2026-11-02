@@ -12,7 +12,6 @@ layout: personal
 </div>
 <p class="result-count" data-result-count aria-live="polite" data-label="{{ ui.results }}" hidden></p>
 <div class="publication-list">
-  {% assign publications = site.publications | sort: 'date' | reverse %}
-  {% for publication in publications %}{% include personal/publication.html publication=publication show_bibtex=true %}{% endfor %}
+  {% include personal/publications.html publications=site.publications show_bibtex=true %}
 </div>
 <p class="empty-results" data-empty-results hidden>{{ ui.no_results }}</p>

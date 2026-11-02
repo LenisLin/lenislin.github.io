@@ -2,6 +2,7 @@
 title: 'PhosMap: An ensemble bioinformatic platform to empower interactive analysis of quantitative phosphoproteomics'
 date: '2024-05-01'
 year: 2024
+source_order: 10
 kind: journal
 selected: false
 pub: Computers in Biology and Medicine

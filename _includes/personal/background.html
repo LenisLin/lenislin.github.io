@@ -2,13 +2,19 @@
   <section class="background-section" aria-labelledby="education-heading">
     <p class="eyebrow">{{ ui.education_kicker }}</p><h2 id="education-heading">{{ ui.education }}</h2>
     {% for item in profile.education %}
-      <article class="timeline-entry"><p class="entry-date">{{ item.dates[lang] }}</p><h3>{{ item.names[lang] }}</h3><p class="entry-role">{{ item.positions[lang] }}</p><p class="entry-detail">{{ item.departments[lang] }}</p>{% if item.advisor %}<p class="entry-detail">{{ ui.advisor }} <a href="{{ profile.advisor_url }}">{{ item.advisor }}</a></p>{% endif %}</article>
+      <article class="timeline-entry">
+        <a class="institution-logo" href="{{ item.website }}" aria-label="{{ item.names[lang] }}"><img src="{{ item.logo | relative_url }}" alt="" width="48" height="48" loading="lazy"></a>
+        <div class="timeline-copy"><p class="entry-date">{{ item.dates[lang] }}</p><h3>{{ item.names[lang] }}</h3><p class="entry-role">{{ item.positions[lang] }}</p><p class="entry-detail">{{ item.departments[lang] }}</p>{% if item.advisor %}<p class="entry-detail">{{ ui.advisor }} <a href="{{ profile.advisor_url }}">{{ item.advisor }}</a></p>{% endif %}</div>
+      </article>
     {% endfor %}
   </section>
   <section class="background-section" aria-labelledby="experience-heading">
     <p class="eyebrow">{{ ui.experience_kicker }}</p><h2 id="experience-heading">{{ ui.experience }}</h2>
     {% for item in profile.experience %}
-      <article class="timeline-entry"><p class="entry-date">{{ item.dates[lang] }}</p><h3>{{ item.names[lang] }}</h3><p class="entry-role">{{ item.positions[lang] }}</p></article>
+      <article class="timeline-entry">
+        <a class="institution-logo institution-logo--wordmark" href="{{ item.website }}" aria-label="{{ item.names[lang] }}"><img src="{{ item.logo | relative_url }}" alt="" width="58" height="30" loading="lazy"></a>
+        <div class="timeline-copy"><p class="entry-date">{{ item.dates[lang] }}</p><h3>{{ item.names[lang] }}</h3><p class="entry-role">{{ item.positions[lang] }}</p></div>
+      </article>
     {% endfor %}
   </section>
   <section class="background-section" aria-labelledby="services-heading">

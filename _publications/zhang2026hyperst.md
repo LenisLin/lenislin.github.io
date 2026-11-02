@@ -2,6 +2,7 @@
 title: 'HyperST: Hierarchical Hyperbolic Learning for Spatial Transcriptomics Prediction'
 date: '2026-06-01'
 year: 2026
+source_order: 3
 kind: conference
 selected: true
 pub: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), Spotlight
@@ -18,7 +19,7 @@ authors:
 - Rongshan Yu
 abstract: A CVPR 2026 Spotlight paper on hierarchical hyperbolic learning for spatial transcriptomics
   prediction.
-cover: /assets/images/papers/hyperst-home.png
+cover: /assets/images/papers/hyperst-first-page.png
 links:
   Paper: https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_HyperST_Hierarchical_Hyperbolic_Learning_for_Spatial_Transcriptomics_Prediction_CVPR_2026_paper.html
   DOI: https://doi.org/10.48550/arXiv.2511.22107

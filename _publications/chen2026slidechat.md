@@ -3,6 +3,7 @@ title: SlideChat is a multimodal generative artificial intelligence assistant fo
   pathology across cancer types
 date: '2026-09-01'
 year: 2026
+source_order: 0
 kind: journal
 selected: false
 pub: Nature Cancer

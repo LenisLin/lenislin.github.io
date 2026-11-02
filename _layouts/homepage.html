@@ -42,14 +42,13 @@ layout: personal
 </section>
 
 <section class="publications-section" aria-labelledby="selected-heading">
+  <p class="eyebrow">{{ ui.selected_kicker }}</p>
   <div class="section-heading">
-    <div><p class="eyebrow">{{ ui.selected_kicker }}</p><h2 id="selected-heading">{{ ui.selected_publications }}</h2></div>
+    <h2 id="selected-heading">{{ ui.selected_publications }}</h2>
     <a href="{{ site.data.navigation.pages[1].urls[lang] | relative_url }}">{{ ui.all_publications }} <span aria-hidden="true">→</span></a>
   </div>
-  {% assign selected = site.publications | where: 'selected', true | sort: 'date' | reverse %}
-  {% for publication in selected limit:site.data.display.homepage.num_selected %}
-    {% include personal/publication.html publication=publication %}
-  {% endfor %}
+  {% assign selected = site.publications | where: 'selected', true %}
+  {% include personal/publications.html publications=selected limit=site.data.display.homepage.num_selected %}
 </section>
 
 {% include personal/background.html %}

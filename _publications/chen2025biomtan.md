@@ -3,6 +3,7 @@ title: 'BioMTAN: A Biological Knowledge-guided Multi-task Attention Network for 
   and Prognosis'
 date: '2026-06-01'
 year: 2026
+source_order: 2
 kind: journal
 selected: false
 pub: IEEE Journal of Biomedical and Health Informatics

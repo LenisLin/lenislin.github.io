@@ -2,6 +2,7 @@
 title: 'Chem2Gen-Bench: Benchmarking Chemical-to-Genetic Translation in Perturbation Response Space'
 date: '2026-06-01'
 year: 2026
+source_order: 1
 kind: preprint
 selected: true
 pub: arXiv
@@ -10,7 +11,7 @@ authors:
 - Ying Chen
 abstract: A benchmark for evaluating when chemical and genetic perturbation profiles align around shared
   targets in perturbation response space.
-cover: /assets/images/papers/chem2gen-home.png
+cover: /assets/images/papers/chem2gen-first-page.png
 links:
   Paper: https://arxiv.org/abs/2606.21109
   DOI: https://doi.org/10.48550/arXiv.2606.21109

@@ -2,6 +2,7 @@
 title: Tracing unknown tumor origins with a biological-pathway-based transformer model
 date: '2024-06-01'
 year: 2024
+source_order: 9
 kind: journal
 selected: false
 pub: Cell Reports Methods

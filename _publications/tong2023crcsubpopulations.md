@@ -3,6 +3,7 @@ title: Prioritizing prognostic-associated subpopulations and individualized recu
   from single-cell transcriptomes of colorectal cancer
 date: '2023-03-01'
 year: 2023
+source_order: 12
 kind: journal
 selected: true
 pub: Briefings in Bioinformatics
@@ -20,7 +21,7 @@ authors:
 - Rongshan Yu
 abstract: scRank prioritizes prognostic-associated subpopulations and individualized recurrence risk signatures
   from single-cell transcriptomes of colorectal cancer.
-cover: /assets/images/papers/scrank-home.png
+cover: /assets/images/papers/scrank-first-page.png
 links:
   Paper: https://doi.org/10.1093/bib/bbad078
   DOI: https://doi.org/10.1093/bib/bbad078

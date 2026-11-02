@@ -2,6 +2,7 @@
 title: 'SurvMamba: State Space Model with Multi-Grained Multi-Modal Interaction for Survival Prediction'
 date: '2025-12-01'
 year: 2025
+source_order: 6
 kind: conference
 selected: false
 pub: 2025 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)

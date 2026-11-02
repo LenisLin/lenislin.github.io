@@ -3,6 +3,7 @@ title: 'SIMarker: Cellular similarity detection and its application to diagnosis
   cancer'
 date: '2024-03-01'
 year: 2024
+source_order: 11
 kind: journal
 selected: false
 pub: Computers in Biology and Medicine
