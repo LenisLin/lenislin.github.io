@@ -15,7 +15,7 @@ authors:
 - Wenxian Yang
 - Rongshan Yu
 abstract: A state-space-model survival prediction framework with multi-grained multi-modal interaction.
-cover: /assets/images/papers/survmamba-first-page.png
+cover: /assets/images/papers/survmamba-first-page.webp
 links:
   Paper: https://doi.org/10.1109/BIBM66473.2025.11356727
   DOI: https://doi.org/10.1109/BIBM66473.2025.11356727

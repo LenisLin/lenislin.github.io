@@ -27,7 +27,7 @@ authors:
 - Zhi-Liang Ji
 abstract: An ensemble bioinformatic platform for interactive analysis of quantitative phosphoproteomics
   data.
-cover: /assets/images/papers/phosmap-first-page.png
+cover: /assets/images/papers/phosmap-first-page.webp
 links:
   Paper: https://doi.org/10.1016/j.compbiomed.2024.108391
   DOI: https://doi.org/10.1016/j.compbiomed.2024.108391

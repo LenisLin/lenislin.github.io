@@ -3,9 +3,13 @@
 (() => {
   const themeButton = document.querySelector('.theme-toggle');
   themeButton.hidden = false;
+  themeButton.setAttribute('aria-pressed', String(document.documentElement.classList.contains('dark')));
   themeButton.addEventListener('click', () => {
     const dark = document.documentElement.classList.toggle('dark');
     themeButton.setAttribute('aria-pressed', String(dark));
+    try {
+      localStorage.setItem('homepage-theme', dark ? 'dark' : 'light');
+    } catch (error) { /* Theme switching remains available without browser storage. */ }
   });
 
   const printButton = document.querySelector('[data-print]');
@@ -45,5 +49,7 @@
   search.addEventListener('input', update);
   year.addEventListener('change', update);
   type.addEventListener('change', update);
+  // Browsers restore form values after pageshow when returning through history.
+  window.addEventListener('pageshow', () => window.setTimeout(update, 0));
   update();
 })();

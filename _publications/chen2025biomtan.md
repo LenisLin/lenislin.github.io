@@ -16,7 +16,7 @@ authors:
 - Rongshan Yu
 abstract: A biological knowledge-guided multi-task attention network for jointly improving cancer diagnosis
   and prognosis modeling.
-cover: /assets/images/papers/biomtan-first-page.png
+cover: /assets/images/papers/biomtan-first-page.webp
 links:
   Paper: https://doi.org/10.1109/JBHI.2025.3638707
   DOI: https://doi.org/10.1109/JBHI.2025.3638707

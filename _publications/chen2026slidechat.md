@@ -33,7 +33,7 @@ authors:
 - Junjun He
 - Yuanfeng Ji
 abstract: A multimodal generative AI assistant for whole-slide computational pathology across cancer types.
-cover: /assets/images/papers/slidechat-first-page.png
+cover: /assets/images/papers/slidechat-first-page.webp
 links:
   Paper: https://www.nature.com/articles/s43018-026-01220-4
   DOI: https://doi.org/10.1038/s43018-026-01220-4

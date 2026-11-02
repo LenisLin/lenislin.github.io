@@ -16,7 +16,7 @@ authors:
 - Rongshan Yu
 abstract: A multi-scale image-gene foundation modeling method for spatial transcriptomics via spot-niche
   alignment.
-cover: /assets/images/papers/stalign-first-page.png
+cover: /assets/images/papers/stalign-first-page.webp
 links:
   Paper: https://openreview.net/forum?id=EWzPy228cM
   Code: https://github.com/dumbgoos/ST-Align

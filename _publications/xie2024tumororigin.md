@@ -18,7 +18,7 @@ authors:
 - Rongshan Yu
 abstract: A biological-pathway-based transformer model for identifying unknown tumor origins from molecular
   profiles.
-cover: /assets/images/papers/tumororigin-first-page.png
+cover: /assets/images/papers/tumororigin-first-page.webp
 links:
   Paper: https://doi.org/10.1016/j.crmeth.2024.100797
   DOI: https://doi.org/10.1016/j.crmeth.2024.100797

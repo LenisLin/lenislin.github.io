@@ -17,7 +17,7 @@ authors:
 - Jiahuai Han
 abstract: A preprint developing a self-learning strategy for accurate cell abundance quantification under
   multi-positive and unlabeled settings.
-cover: /assets/images/papers/cellabundance-first-page.png
+cover: /assets/images/papers/cellabundance-first-page.webp
 links:
   Paper: https://doi.org/10.1101/2024.10.12.617956
   DOI: https://doi.org/10.1101/2024.10.12.617956

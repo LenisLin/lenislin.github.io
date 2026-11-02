@@ -21,7 +21,7 @@ authors:
 - Rongshan Yu
 abstract: scRank prioritizes prognostic-associated subpopulations and individualized recurrence risk signatures
   from single-cell transcriptomes of colorectal cancer.
-cover: /assets/images/papers/scrank-first-page.png
+cover: /assets/images/papers/scrank-first-page.webp
 links:
   Paper: https://doi.org/10.1093/bib/bbad078
   DOI: https://doi.org/10.1093/bib/bbad078

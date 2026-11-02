@@ -25,7 +25,7 @@ authors:
 - Kejia Wang
 abstract: A study of inflammatory balance during liver reconstitution through regulatory T cells and macrophage
   polarization.
-cover: /assets/images/papers/ccl2-first-page.png
+cover: /assets/images/papers/ccl2-first-page.webp
 links:
   Paper: https://doi.org/10.1002/advs.202403849
   DOI: https://doi.org/10.1002/advs.202403849

@@ -1,11 +1,12 @@
 {% assign pub = include.publication %}
+{% assign title_tag = 'h3' %}{% if page.section == 'publications' %}{% assign title_tag = 'h2' %}{% endif %}
 <article class="publication" data-publication data-year="{{ pub.year }}" data-type="{{ pub.kind }}">
   <a class="publication-cover" href="{{ pub.links.Paper }}" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-    <img src="{{ pub.cover | relative_url }}" alt="" width="300" height="200" loading="lazy">
+    <img src="{{ pub.cover | relative_url }}" alt="" width="300" height="400" loading="lazy">
   </a>
   <div class="publication-copy">
-    <div class="publication-meta"><span>{{ pub.pub }}</span><time datetime="{{ pub.date | date: '%Y-%m' }}">{{ pub.date | date: '%b %Y' }}</time>{% if pub.kind == 'preprint' %}<span class="badge">{{ ui.preprint }}</span>{% endif %}</div>
-    <h3><a href="{{ pub.links.Paper }}" target="_blank" rel="noopener noreferrer">{{ pub.title }}</a></h3>
+    <div class="publication-meta"><span>{{ pub.pub }}</span><time datetime="{{ pub.date | date: '%Y-%m' }}">{% if lang == 'zh' %}{{ pub.date | date: '%Y.%m' }}{% else %}{{ pub.date | date: '%b %Y' }}{% endif %}</time>{% if pub.kind == 'preprint' %}<span class="badge">{{ ui.preprint }}</span>{% endif %}</div>
+    <{{ title_tag }}><a href="{{ pub.links.Paper }}" target="_blank" rel="noopener noreferrer">{{ pub.title }}</a></{{ title_tag }}>
     <p class="publication-authors">{% for author in pub.authors %}{% if author == site.data.profile.primary_name %}<strong>{{ author }}</strong>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
     <p class="publication-summary">{{ pub.abstract }}</p>
     <div class="publication-links">

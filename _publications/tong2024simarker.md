@@ -19,7 +19,7 @@ authors:
 - Jialiang Huang
 abstract: A cellular similarity detection method applied to diagnosis and prognosis modeling in liver
   cancer.
-cover: /assets/images/papers/simarker-first-page.png
+cover: /assets/images/papers/simarker-first-page.webp
 links:
   Paper: https://doi.org/10.1016/j.compbiomed.2024.108113
   DOI: https://doi.org/10.1016/j.compbiomed.2024.108113

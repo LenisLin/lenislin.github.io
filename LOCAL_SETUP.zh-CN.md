@@ -9,6 +9,7 @@
 - 根路径固定显示英文，语言由 URL 决定；导航提供手动切换。
 - 深浅主题可通过导航按钮切换；论文页提供搜索、年份/类型筛选、逐篇 BibTeX 和文献列表下载。
 - 默认采用深炭黑背景、暖白正文与金色点缀；主题按钮可切换为暖白浅色版本。
+- 浏览器会记住手动选择的主题，首次访问默认黑金；主题设置不影响页面语言。
 - 论文按年月倒序排列，同月按 `source_order` 保持原 BibTeX 中的先后；首页、论文页和 CV 共用 `_includes/personal/publications.html`。
 
 ## 本机运行
@@ -51,6 +52,8 @@ GitHub Pages 的发布来源使用 GitHub Actions。`Gemfile.lock` 随源码提�
 | 页面布局与样式 | `_layouts/`、`_includes/personal/`、`assets/css/personal.css` |
 
 迁移后，`_data/`、`_publications/`、`_news/` 是网站内容的维护来源，运行不再依赖相邻的 PRISM 或 CV 目录。可下载的 `.bib` 是迁移时的文献快照；以后增改论文时，需同步该文件中的相应记录。
+
+网页头像与论文封面使用同目录的 `.webp` 展示版本（头像宽 600 px、论文封面宽 432 px），降低首次加载体积。更新图片时，生成对应展示版本并修改 `portrait_url` 或论文的 `cover`。机构 Logo 直接加载，使 CV 打印时也能显示；打印使用白底深色文字。
 
 ## 信息口径
 

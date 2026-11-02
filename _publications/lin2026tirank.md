@@ -27,7 +27,7 @@ authors:
 - Mengsha Tong
 abstract: A computational framework for prioritizing clinically relevant phenotypic niches in the tumor
   microenvironment.
-cover: /assets/images/papers/tirank-first-page.png
+cover: /assets/images/papers/tirank-first-page.webp
 links:
   Paper: https://doi.org/10.1186/s13073-026-01604-2
   DOI: https://doi.org/10.1186/s13073-026-01604-2

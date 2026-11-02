@@ -18,7 +18,7 @@ authors:
 - Mengsha Tong
 - Rongshan Yu
 abstract: An application of individualized differential expression analysis to human cancer proteome data.
-cover: /assets/images/papers/proteome-first-page.png
+cover: /assets/images/papers/proteome-first-page.webp
 links:
   Paper: https://doi.org/10.1093/bib/bbac096
   DOI: https://doi.org/10.1093/bib/bbac096

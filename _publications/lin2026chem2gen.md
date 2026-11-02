@@ -11,7 +11,7 @@ authors:
 - Ying Chen
 abstract: A benchmark for evaluating when chemical and genetic perturbation profiles align around shared
   targets in perturbation response space.
-cover: /assets/images/papers/chem2gen-first-page.png
+cover: /assets/images/papers/chem2gen-first-page.webp
 links:
   Paper: https://arxiv.org/abs/2606.21109
   DOI: https://doi.org/10.48550/arXiv.2606.21109
