@@ -1,0 +1,22 @@
+pages:
+- key: home
+  labels:
+    en: Home
+    zh: 首页
+  urls:
+    en: /
+    zh: /zh/
+- key: publications
+  labels:
+    en: Publications
+    zh: 论文
+  urls:
+    en: /publications
+    zh: /zh/publications
+- key: cv
+  labels:
+    en: CV
+    zh: 简历
+  urls:
+    en: /cv
+    zh: /zh/cv

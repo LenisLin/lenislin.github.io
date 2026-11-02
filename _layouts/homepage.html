@@ -1,0 +1,62 @@
+---
+layout: personal
+---
+{% assign lang = page.lang | default: 'en' %}
+{% assign ui = site.data.ui[lang] %}
+{% assign profile = site.data.profile %}
+<div class="research-banner" aria-hidden="true">
+  <img src="{{ '/assets/images/research-landscape.svg' | relative_url }}" alt="" width="1200" height="220">
+  <span class="banner-caption">Cells. Context. Computation.</span>
+</div>
+<section class="hero" aria-labelledby="profile-name">
+  <div class="hero-copy">
+    <p class="eyebrow">{{ ui.hero_label }}</p>
+    <h1 id="profile-name">{% if lang == 'zh' %}{{ profile.secondary_name }} <span>{{ profile.primary_name }}</span>{% else %}{{ profile.primary_name }} <span lang="zh">{{ profile.secondary_name }}</span>{% endif %}</h1>
+    <p class="affiliation">{{ profile.headline[lang] }}</p>
+    <div class="hero-bio">{{ profile.summary[lang] | markdownify }}</div>
+    <div class="social-links" aria-label="{{ ui.contact }}">
+      <a href="mailto:{{ profile.email }}">Email ↗</a>
+      <a href="{{ profile.gscholar }}" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
+      <a href="https://github.com/{{ profile.github }}" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      <a href="https://orcid.org/{{ profile.orcid }}" target="_blank" rel="noopener noreferrer">ORCID ↗</a>
+    </div>
+  </div>
+  <figure class="portrait">
+    <img src="{{ profile.portrait_url | relative_url }}" alt="{{ profile.primary_name }}" width="240" height="280" fetchpriority="high">
+    <figcaption>{{ ui.portrait_caption }}</figcaption>
+  </figure>
+</section>
+
+<section class="news-section" aria-labelledby="news-heading">
+  <h2 id="news-heading" class="eyebrow section-kicker">{{ ui.news }}</h2>
+  {% assign news = site.news | sort: 'date' | reverse %}
+  {% for item in news limit:site.data.display.homepage.num_news %}
+    <div class="news-item"><span>{{ item.display_date }}</span><p>{{ item.text[lang] }}</p></div>
+  {% endfor %}
+  <details class="news-archive">
+    <summary>{{ ui.more_news }}</summary>
+    {% for item in news offset:site.data.display.homepage.num_news %}
+      <div class="news-item"><span>{{ item.display_date }}</span><p>{{ item.text[lang] }}</p></div>
+    {% endfor %}
+  </details>
+</section>
+
+<section class="publications-section" aria-labelledby="selected-heading">
+  <div class="section-heading">
+    <div><p class="eyebrow">{{ ui.selected_kicker }}</p><h2 id="selected-heading">{{ ui.selected_publications }}</h2></div>
+    <a href="{{ site.data.navigation.pages[1].urls[lang] | relative_url }}">{{ ui.all_publications }} <span aria-hidden="true">→</span></a>
+  </div>
+  {% assign selected = site.publications | where: 'selected', true | sort: 'date' | reverse %}
+  {% for publication in selected limit:site.data.display.homepage.num_selected %}
+    {% include personal/publication.html publication=publication %}
+  {% endfor %}
+</section>
+
+{% include personal/background.html %}
+
+<section class="contact-section" aria-labelledby="contact-heading">
+  <p class="eyebrow">{{ ui.contact_kicker }}</p>
+  <h2 id="contact-heading">{{ ui.contact_title }}</h2>
+  <p>{{ ui.contact_text }}</p>
+  <a href="mailto:{{ profile.email }}">{{ profile.email }} ↗</a>
+</section>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220">
+  <defs>
+    <linearGradient id="sky" x2="1" y2=".7"><stop stop-color="#dcebf0"/><stop offset=".55" stop-color="#eaf2ed"/><stop offset="1" stop-color="#f0e4d2"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#fdf9e8"/><stop offset="1" stop-color="#fdf9e8" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#6b93a0" stroke-opacity=".12"/></pattern>
+    <g id="cell"><circle r="18" fill="#83a9a5" fill-opacity=".2" stroke="#789f9d" stroke-opacity=".55"/><circle r="6" fill="#5c8996" fill-opacity=".45"/><circle cx="7" cy="-8" r="2.5" fill="#e2bb7a"/></g>
+  </defs>
+  <rect width="1200" height="220" fill="url(#sky)"/>
+  <rect width="1200" height="220" fill="url(#grid)"/>
+  <ellipse cx="895" cy="76" rx="205" ry="150" fill="url(#halo)"/>
+  <g fill="none" stroke="#7da0ac" stroke-width="1.4" opacity=".45"><path d="M0 151C150 67 202 206 350 133S561 27 681 111 867 173 1200 54"/><path d="M0 169C150 85 202 224 350 151S561 45 681 129 867 191 1200 72"/><path d="M0 187C150 103 202 242 350 169S561 63 681 147 867 209 1200 90"/></g>
+  <g transform="translate(160 79)"><use href="#cell"/><use href="#cell" x="43" y="-24"/><use href="#cell" x="43" y="24"/><use href="#cell" x="84"/><use href="#cell" x="84" y="48"/><use href="#cell" x="126" y="24"/><use href="#cell" x="126" y="-24"/></g>
+  <g fill="none" stroke="#4b7e97" stroke-width="1.3" opacity=".6"><path d="M515 69 570 43 625 78 597 126 535 137 515 69 597 126M570 43 535 137M625 78 680 45 723 101 675 157 597 126M625 78 723 101M723 101 779 68 826 126 765 164 723 101"/></g>
+  <g fill="#487d93"><circle cx="515" cy="69" r="4"/><circle cx="570" cy="43" r="5"/><circle cx="625" cy="78" r="7"/><circle cx="597" cy="126" r="5"/><circle cx="535" cy="137" r="4"/><circle cx="680" cy="45" r="4"/><circle cx="723" cy="101" r="6"/><circle cx="675" cy="157" r="4"/><circle cx="779" cy="68" r="4"/><circle cx="826" cy="126" r="5"/><circle cx="765" cy="164" r="3"/></g>
+  <g transform="translate(945 50)" fill="none" stroke="#bd9659" stroke-width="1.6"><path d="M0 0C90 30-10 75 80 110M80 0C-10 30 90 75 0 110"/><path d="M10 8H70M25 22H55M31 37H49M22 52H58M15 67H65M25 82H55M17 98H63" opacity=".55"/></g>
+  <g fill="#c39a5d"><circle cx="420" cy="51" r="4"/><circle cx="863" cy="158" r="4"/><circle cx="1088" cy="46" r="3"/></g>
+</svg>

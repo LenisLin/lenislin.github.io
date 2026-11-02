@@ -1,0 +1,95 @@
+en:
+  skip: Skip to content
+  navigation: Main navigation
+  switch_language: 中文
+  toggle_theme: Toggle dark theme
+  hero_label: Computational biology & biomedical AI
+  portrait_caption: Yuxiang Lin · Xiamen University
+  contact: Profile links
+  news: News
+  more_news: Earlier updates
+  selected_kicker: Research in focus
+  selected_publications: Selected Publications
+  all_publications: All publications
+  education_kicker: Academic path
+  education: Education
+  experience_kicker: Beyond campus
+  experience: Experience
+  services_kicker: Research community
+  services: Academic Services
+  awards_kicker: Recognition
+  awards: Honors & Awards
+  advisor: 'Advisor:'
+  xmu: Xiamen University
+  contact_kicker: Get in touch
+  contact_title: Connecting methods and medicine.
+  contact_text: For research discussions about spatial omics, biomedical agents, or multi-omics for medicine,
+    feel free to reach out.
+  updated: Updated
+  publications_kicker: Papers & preprints
+  publications: Publications
+  publications_description: Research on computational biology, biomedical AI, and multi-omics for medicine.
+  download_bibtex: Download bibliography
+  search: Search
+  search_placeholder: Title, author, venue, or topic…
+  year: Year
+  type: Type
+  all_years: All years
+  all_types: All types
+  journal: Journal
+  conference: Conference / Workshop
+  preprint: Preprint
+  results: publications
+  no_results: No publications match these filters.
+  cv_kicker: Background & research
+  cv: Curriculum Vitae
+  print: Print / Save as PDF
+  research_profile: Research Profile
+  methods: Methods & Topics
+zh:
+  skip: 跳转到正文
+  navigation: 主导航
+  switch_language: English
+  toggle_theme: 切换深色主题
+  hero_label: 计算生物学与生物医学人工智能
+  portrait_caption: 林育祥 · 厦门大学
+  contact: 个人链接
+  news: 最新动态
+  more_news: 往期动态
+  selected_kicker: 研究成果
+  selected_publications: 代表论文
+  all_publications: 全部论文
+  education_kicker: 学术背景
+  education: 教育经历
+  experience_kicker: 科研实践
+  experience: 实习经历
+  services_kicker: 学术共同体
+  services: 学术服务
+  awards_kicker: 荣誉记录
+  awards: 荣誉与奖励
+  advisor: 导师：
+  xmu: 厦门大学
+  contact_kicker: 联系方式
+  contact_title: 连接计算方法与医学问题。
+  contact_text: 欢迎就空间组学、生物医学智能体和面向医学的多组学研究交流。
+  updated: 更新于
+  publications_kicker: 论文与预印本
+  publications: 论文
+  publications_description: 计算生物学、生物医学人工智能和面向医学的多组学研究。
+  download_bibtex: 下载文献列表
+  search: 搜索
+  search_placeholder: 标题、作者、刊会或主题…
+  year: 年份
+  type: 类型
+  all_years: 所有年份
+  all_types: 所有类型
+  journal: 期刊
+  conference: 会议 / 研讨会
+  preprint: 预印本
+  results: 篇论文
+  no_results: 没有符合筛选条件的论文。
+  cv_kicker: 学术背景与研究
+  cv: 个人简历
+  print: 打印 / 保存为 PDF
+  research_profile: 研究简介
+  methods: 方法与主题

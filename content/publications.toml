@@ -1,4 +1,0 @@
-type = "publication"
-title = "Publications"
-description = "Peer-reviewed articles and preprints curated from Google Scholar, arXiv, ORCID, and DOI metadata."
-source = "publications.bib"

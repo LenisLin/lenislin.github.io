@@ -1,0 +1,24 @@
+title: Yuxiang Lin
+description: Yuxiang Lin — computational biology, biomedical agents, and multi-omics for medicine.
+url: https://lenislin.github.io
+baseurl: ''
+lang: en
+timezone: Asia/Shanghai
+last_updated: '2026-11-02'
+markdown: kramdown
+plugins:
+- jekyll-email-protect
+collections:
+- publications
+- news
+exclude:
+- Gemfile
+- Gemfile.lock
+- vendor
+- README.md
+- LOCAL_SETUP.zh-CN.md
+- CONTENT_BRIEF.zh-CN.md
+- blog.html
+- showcase.html
+- index_layout2.html
+- preview.sh

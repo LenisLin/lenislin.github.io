@@ -1,0 +1,22 @@
+<div class="background-grid">
+  <section class="background-section" aria-labelledby="education-heading">
+    <p class="eyebrow">{{ ui.education_kicker }}</p><h2 id="education-heading">{{ ui.education }}</h2>
+    {% for item in profile.education %}
+      <article class="timeline-entry"><p class="entry-date">{{ item.dates[lang] }}</p><h3>{{ item.names[lang] }}</h3><p class="entry-role">{{ item.positions[lang] }}</p><p class="entry-detail">{{ item.departments[lang] }}</p>{% if item.advisor %}<p class="entry-detail">{{ ui.advisor }} <a href="{{ profile.advisor_url }}">{{ item.advisor }}</a></p>{% endif %}</article>
+    {% endfor %}
+  </section>
+  <section class="background-section" aria-labelledby="experience-heading">
+    <p class="eyebrow">{{ ui.experience_kicker }}</p><h2 id="experience-heading">{{ ui.experience }}</h2>
+    {% for item in profile.experience %}
+      <article class="timeline-entry"><p class="entry-date">{{ item.dates[lang] }}</p><h3>{{ item.names[lang] }}</h3><p class="entry-role">{{ item.positions[lang] }}</p></article>
+    {% endfor %}
+  </section>
+  <section class="background-section" aria-labelledby="services-heading">
+    <p class="eyebrow">{{ ui.services_kicker }}</p><h2 id="services-heading">{{ ui.services }}</h2>
+    {% for item in profile.services %}<div class="service-entry"><h3>{{ item.labels[lang] }}</h3><p>{{ item.venues | join: ', ' }}</p></div>{% endfor %}
+  </section>
+  <section class="background-section" aria-labelledby="awards-heading">
+    <p class="eyebrow">{{ ui.awards_kicker }}</p><h2 id="awards-heading">{{ ui.awards }}</h2>
+    {% for item in profile.awards %}<div class="award-entry"><span class="award-count">{{ item.count }}×</span><div><h3>{{ item.names[lang] }}</h3><p>{{ ui.xmu }}</p></div></div>{% endfor %}
+  </section>
+</div>

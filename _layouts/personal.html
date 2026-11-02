@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.description | escape }}">
+  <meta name="color-scheme" content="light dark">
+  <title>{{ page.title | escape }} · {{ site.data.profile.primary_name }}</title>
+  <link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ '/assets/css/personal.css' | relative_url }}">
+  <script src="{{ '/assets/js/personal.js' | relative_url }}" defer></script>
+</head>
+<body>
+  {% assign lang = page.lang | default: 'en' %}
+  {% assign ui = site.data.ui[lang] %}
+  {% assign profile = site.data.profile %}
+  <a class="skip-link" href="#main">{{ ui.skip }}</a>
+  <header class="site-header">
+    <nav class="site-nav wrap" aria-label="{{ ui.navigation }}">
+      {% if lang == 'zh' %}{% assign home = '/zh/' %}{% else %}{% assign home = '/' %}{% endif %}
+      <a class="wordmark" href="{{ home | relative_url }}">YL<span>.</span></a>
+      <div class="nav-links">
+        {% for item in site.data.navigation.pages %}
+          <a href="{{ item.urls[lang] | relative_url }}" {% if page.section == item.key %}aria-current="page"{% endif %}>{{ item.labels[lang] }}</a>
+        {% endfor %}
+      </div>
+      <div class="nav-controls">
+        <a class="language-link" href="{{ page.alternate | relative_url }}" lang="{% if lang == 'en' %}zh{% else %}en{% endif %}">{{ ui.switch_language }}</a>
+        <button class="theme-toggle" type="button" aria-label="{{ ui.toggle_theme }}" aria-pressed="false" hidden>◐</button>
+      </div>
+    </nav>
+  </header>
+  <main id="main" class="wrap" tabindex="-1">{{ content }}</main>
+  <footer class="site-footer wrap">
+    <span>© {{ site.time | date: '%Y' }} {{ profile.primary_name }} · {{ ui.updated }} {{ site.last_updated }}</span>
+    <span><a href="https://github.com/luost26/academic-homepage">academic-homepage</a> · <a href="https://github.com/xyjoey/PRISM">PRISM</a></span>
+  </footer>
+</body>
+</html>

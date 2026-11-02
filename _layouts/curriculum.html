@@ -1,0 +1,11 @@
+---
+layout: personal
+---
+{% assign lang = page.lang | default: 'en' %}
+{% assign ui = site.data.ui[lang] %}
+{% assign profile = site.data.profile %}
+<header class="page-heading"><p class="eyebrow">{{ ui.cv_kicker }}</p><h1>{{ ui.cv }}</h1><p>{{ profile.headline[lang] }}</p><button type="button" class="print-button" data-print hidden>{{ ui.print }} ↗</button></header>
+<section class="cv-bio prose"><h2>{{ ui.research_profile }}</h2>{{ profile.bio[lang] | markdownify }}</section>
+{% include personal/background.html %}
+<section class="cv-publications"><div class="section-heading"><h2>{{ ui.selected_publications }}</h2><a href="{{ site.data.navigation.pages[1].urls[lang] | relative_url }}">{{ ui.all_publications }} →</a></div>{% assign selected = site.publications | where: 'selected', true | sort: 'date' | reverse %}<ol>{% for publication in selected %}<li><a href="{{ publication.links.Paper }}">{{ publication.title }}</a><p>{{ publication.pub }}, {{ publication.year }}</p></li>{% endfor %}</ol></section>
+<section class="cv-methods"><h2>{{ ui.methods }}</h2><ul>{% for method in profile.methods[lang] %}<li>{{ method }}</li>{% endfor %}</ul></section>

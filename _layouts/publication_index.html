@@ -1,0 +1,18 @@
+---
+layout: personal
+---
+{% assign lang = page.lang | default: 'en' %}
+{% assign ui = site.data.ui[lang] %}
+{% assign profile = site.data.profile %}
+<header class="page-heading"><p class="eyebrow">{{ ui.publications_kicker }}</p><h1>{{ ui.publications }}</h1><p>{{ ui.publications_description }}</p><a href="{{ '/assets/files/publications.bib' | relative_url }}" download>{{ ui.download_bibtex }} ↓</a></header>
+<div class="publication-filters" data-filters hidden>
+  <label class="search-label">{{ ui.search }}<input type="search" data-search placeholder="{{ ui.search_placeholder }}"></label>
+  <label>{{ ui.year }}<select data-year-filter><option value="">{{ ui.all_years }}</option>{% assign by_year = site.publications | sort: 'year' | reverse | group_by: 'year' %}{% for year in by_year %}<option value="{{ year.name }}">{{ year.name }}</option>{% endfor %}</select></label>
+  <label>{{ ui.type }}<select data-type-filter><option value="">{{ ui.all_types }}</option><option value="journal">{{ ui.journal }}</option><option value="conference">{{ ui.conference }}</option><option value="preprint">{{ ui.preprint }}</option></select></label>
+</div>
+<p class="result-count" data-result-count aria-live="polite" data-label="{{ ui.results }}" hidden></p>
+<div class="publication-list">
+  {% assign publications = site.publications | sort: 'date' | reverse %}
+  {% for publication in publications %}{% include personal/publication.html publication=publication show_bibtex=true %}{% endfor %}
+</div>
+<p class="empty-results" data-empty-results hidden>{{ ui.no_results }}</p>

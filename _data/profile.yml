@@ -1,0 +1,147 @@
+primary_name: Yuxiang Lin
+secondary_name: 林育祥
+navbar_name: Yuxiang Lin
+email: linyuxiang@stu.xmu.edu.cn
+gscholar: https://scholar.google.com/citations?user=TgJ6W0YAAAAJ&hl=en
+github: lenislin
+orcid: 0000-0001-8854-2995
+portrait_url: /assets/images/photos/yuxiang-lin.jpg
+advisor_url: https://scholar.google.com/citations?hl=en&user=Uh1EpKQAAAAJ
+headline:
+  en: Ph.D. Candidate · Xiamen University
+  zh: 博士研究生 · 厦门大学
+summary:
+  en: 'I am a Ph.D. candidate in computational biology and bioinformatics at Xiamen University, advised
+    by [Rongshan Yu](https://scholar.google.com/citations?hl=en&user=Uh1EpKQAAAAJ). Since October 2026,
+    I have also been an intern at Alibaba DAMO Academy.
+
+
+    I develop computational methods for single-cell and spatial omics, perturbation-response modeling,
+    and translational biomarker discovery. I am also interested in biomedical agents that connect multimodal
+    evidence with scientific workflows.'
+  zh: '我是林育祥，厦门大学健康医疗大数据研究院计算生物学与生物信息学博士研究生，导师为 [Rongshan Yu](https://scholar.google.com/citations?hl=en&user=Uh1EpKQAAAAJ)。自
+    2026 年 10 月起，我也在阿里巴巴达摩院实习。
+
+
+    我的研究涉及单细胞与空间组学、扰动响应建模和转化医学标志物发现，同时关注连接多模态证据与科研流程的生物医学智能体。'
+bio:
+  en: 'I am Yuxiang Lin (林育祥), a Ph.D. candidate at the National Institute for Data Science in Health
+    and Medicine, Xiamen University, majoring in computational biology and bioinformatics. I am supervised
+    by [Rongshan Yu](https://scholar.google.com/citations?hl=en&user=Uh1EpKQAAAAJ).
+
+
+    I received my B.S. in Biology from the State Key Laboratory of Cellular Stress Biology, School of
+    Life Sciences, Xiamen University (2018-2022).
+
+
+    My research is organized around three connected interests:
+
+
+    - **Computational biology:** developing computational methods for clinically relevant tumor microenvironment
+    niche discovery, single-cell recurrence risk modeling, spatial transcriptomics prediction, and perturbation-response
+    benchmarking, represented by TiRank, scRank, ST-Align, HyperST, and Chem2Gen-Bench.
+
+    - **Biomedical agents:** exploring agentic AI systems for biomedical research, including literature-aware
+    reasoning, multimodal evidence integration, tool-augmented data analysis, and workflow automation
+    for diagnosis, prognosis, and mechanism discovery.
+
+    - **Multi-omics for medicine:** integrating single-cell, spatial, transcriptomic, proteomic, and imaging
+    data to support disease mechanism discovery and translational biomarker analysis.
+
+    '
+  zh: '我是林育祥（Yuxiang Lin），目前是厦门大学健康医疗大数据研究院（National Institute for Data Science in Health and Medicine,
+    Xiamen University）博士生，专业方向为计算生物学/生物信息学，导师为 [Rongshan Yu](https://scholar.google.com/citations?hl=en&user=Uh1EpKQAAAAJ)。
+
+
+    本科阶段就读于厦门大学生命科学学院 State Key Laboratory of Cellular Stress Biology，获得生物学学士学位（2018-2022）。
+
+
+    我的研究兴趣主要围绕三个相互关联的方向展开：
+
+
+    - **Computational biology:** 开发面向临床问题的计算方法，用于肿瘤微环境生态位发现、单细胞复发风险建模、空间转录组预测和扰动响应基准评估，代表性工作包括 TiRank、scRank、ST-Align、HyperST
+    和 Chem2Gen-Bench。
+
+    - **Biomedical agents:** 探索智能体在生物医学研究中的应用，包括文献驱动推理、多模态证据整合、工具调用式数据分析，以及面向诊断、预后和机制发现的自动化研究流程。
+
+    - **Multi-omics for medicine:** 整合单细胞、空间组学、转录组、蛋白组和病理图像数据，服务于疾病机制解析和转化医学标志物发现。
+
+    '
+education:
+- names:
+    en: Xiamen University
+    zh: 厦门大学
+  positions:
+    en: Ph.D. in Computational Biology and Bioinformatics
+    zh: 计算生物学与生物信息学博士研究生
+  departments:
+    en: National Institute for Data Science in Health and Medicine
+    zh: 健康医疗大数据研究院
+  dates:
+    en: 2022 – 2027 (expected)
+    zh: 2022 – 2027（预计）
+  advisor: Rongshan Yu
+- names:
+    en: Xiamen University
+    zh: 厦门大学
+  positions:
+    en: B.S. in Biological Sciences
+    zh: 生物学学士
+  departments:
+    en: School of Life Sciences · State Key Laboratory of Cellular Stress Biology
+    zh: 生命科学学院 · 细胞应激生物学国家重点实验室
+  dates:
+    en: Sep. 2018 – Jun. 2022
+    zh: 2018.09 – 2022.06
+experience:
+- names:
+    en: Alibaba DAMO Academy
+    zh: 阿里巴巴达摩院
+  positions:
+    en: Intern
+    zh: 实习生
+  dates:
+    en: Oct. 2026 – Present
+    zh: 2026.10 – 至今
+services:
+- labels:
+    en: Conference Reviewer
+    zh: 会议审稿
+  venues:
+  - ICLR
+  - CVPR
+  - IEEE BIBM
+- labels:
+    en: Journal Reviewer
+    zh: 期刊审稿
+  venues:
+  - Nature Communications
+  - IEEE Transactions on Medical Imaging
+  - Bioinformatics
+  - Briefings in Bioinformatics
+awards:
+- names:
+    en: Doctoral Scholarship
+    zh: 博士研究生奖学金
+  count: 3
+- names:
+    en: University-level Undergraduate Scholarship
+    zh: 本科校级奖学金
+  count: 2
+methods:
+  en:
+  - Computational biology and bioinformatics
+  - Biomedical agents and machine learning
+  - Perturbation-response modeling and benchmark construction
+  - Single-cell and spatial transcriptomics
+  - Tumor microenvironment analysis
+  - Proteomics and phosphoproteomics
+  - Cancer diagnosis, prognosis, and biomarker discovery
+  zh:
+  - 计算生物学与生物信息学
+  - 生物医学智能体与机器学习
+  - 扰动响应建模与基准构建
+  - 单细胞与空间转录组学
+  - 肿瘤微环境分析
+  - 蛋白质组学与磷酸化蛋白质组学
+  - 肿瘤诊断、预后与生物标志物发现

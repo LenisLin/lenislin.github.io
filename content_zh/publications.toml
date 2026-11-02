@@ -1,4 +1,0 @@
-type = "publication"
-title = "论文"
-description = "基于 Google Scholar、arXiv、ORCID 与 DOI 元数据整理的论文与预印本。"
-source = "publications.bib"
